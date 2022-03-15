@@ -50,11 +50,10 @@ const arrayGenerator = (type, object) => {
   const entries = (Object.entries(object));
   if (type === 'keys') {
     return keys;
-  } else if (type === 'values') {
+  } if (type === 'values') {
     return value;
-  } else {
+  } 
     return entries;
-  }
 };
 console.log(arrayGenerator('values', { sum: 3, mult: 2, div: 0, sub: -1 }));
 module.exports = { calculator, arrayGenerator };
