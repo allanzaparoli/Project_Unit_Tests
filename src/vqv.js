@@ -23,7 +23,7 @@ const vqv = (string, numero) => {
   const saudacao = `Oi, meu nome é ${string}!
 Tenho ${numero} anos,
 trabalho na Trybe e mando muito em programação!
-#VQV!`
+#VQV!`;
 
   return saudacao;
 };

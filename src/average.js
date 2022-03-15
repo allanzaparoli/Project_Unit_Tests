@@ -27,11 +27,11 @@ const average = (array) => {
   let soma = 0;
   let media = 0;
   let string = false;
-  array.forEach(element => {
+  array.forEach (element => {
     if (typeof element === 'string') {
       string = true;
     }
-    soma = soma + element;
+    soma += element;
   });
   if (string === true || array.length === 0) {
     return undefined;
@@ -42,7 +42,6 @@ const average = (array) => {
 console.log(average([3, 4, 5]));
 
 module.exports = average;
-
 
 // const average = (arr) => {
 //   let soma = 0;

@@ -39,7 +39,7 @@ const calculator = (number1, number2) => {
     mult: number1 * number2,
     div: Math.floor(number1 / number2),
     sub: number1 - number2,
-  }
+  };
 return calcular;
 };
 console.log(calculator(1, 2));
@@ -48,13 +48,13 @@ const arrayGenerator = (type, object) => {
   const keys = (Object.keys(object));
   const value = (Object.values(object));
   const entries = (Object.entries(object));
-  if(type === 'keys') {
+  if (type === 'keys') {
     return keys;
-  }else if (type === 'values') {
+  } else if (type === 'values') {
     return value;
-  }else {
+  } else {
     return entries;
   }
 };
-console.log(arrayGenerator('values', {sum: 3, mult: 2, div: 0, sub: -1}))
+console.log(arrayGenerator('values', { sum: 3, mult: 2, div: 0, sub: -1 }));
 module.exports = { calculator, arrayGenerator };
