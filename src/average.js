@@ -27,7 +27,7 @@ const average = (array) => {
   let soma = 0;
   let media = 0;
   let string = false;
-  array.forEach (element => {
+  array.forEach(element=>{
     if (typeof element === 'string') {
       string = true;
     }
